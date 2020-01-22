@@ -1,12 +1,7 @@
 <div class= "px-md-4  py-md-4 bd-sidebar">
     <ul>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="bd-toc-item" routerLink="/tuto/new">ng new MyApp</a>
+        <li class="nav-item" routerLinkActive="active" *ngFor="let item of items">
+            <a class="bd-toc-item" routerLink={{item.path}}>{{ item.title }}</a>
         </li>
-        <li>Hi</li>
-        <li>Hi</li>
-        <li>Hi</li>
-        <li>Hi</li>
-        <li>Hi</li>
     </ul>
 </div>

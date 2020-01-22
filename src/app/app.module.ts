@@ -9,16 +9,23 @@ import { TutoComponent } from './tuto/tuto.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { NewComponent } from './tuto/new/new.component';
+import { NewcComponent } from './tuto/newc/newc.component';
+import { NgforComponent } from './tuto/ngfor/ngfor.component';
+import { NgifComponent } from './tuto/ngif/ngif.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'tuto', component: TutoComponent },
-  { path: 'home', component: HomeComponent},
-  { path: 'tuto/new', component: NewComponent}
+  { path: 'home', component: HomeComponent },
+  { path: 'tuto/new', component: NewComponent },
+  { path: 'tuto/newc', component: NewcComponent },
+  { path: 'tuto/ngfor', component: NgforComponent },
+  { path: 'tuto/ngif', component: NgifComponent }
 ];
 
 @NgModule({
   exports: [RouterModule],
+  declarations: [NewcComponent, NgforComponent, NgifComponent],
 })
 export class AppRoutingModule {}
 
@@ -30,7 +37,10 @@ export class AppRoutingModule {}
     SidebarComponent,
     HomeComponent,
     TutoComponent,
-    NewComponent
+    NewComponent,
+    NewcComponent,
+    NgforComponent,
+    NgifComponent
   ],
   imports: [
     BrowserModule,

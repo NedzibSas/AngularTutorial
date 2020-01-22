@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-new',
-  templateUrl: './new.component.html'
+  selector: 'app-ngif',
+  templateUrl: './ngif.component.html'
 })
-export class NewComponent implements OnInit {
+export class NgifComponent implements OnInit {
 
   constructor() { }
 
